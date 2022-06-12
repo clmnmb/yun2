@@ -8,42 +8,6 @@ import (
 	"os/exec"
 )
 
-type Fs_in struct {
-	Challenge string
-	Token     string
-	Ttype     string
-}
-
-type Fs_out struct {
-	Challenge string
-}
-
-// type test struct {
-// 	Uuid string
-// 	Token string
-// 	Ts string
-// 	Type string
-// 	Event test_event
-// }
-
-// type test_event struct {
-// 	Type string
-// 	App_id string
-// 	Tenant_key string
-// 	Root_id string
-// 	Parent_id string
-// 	Open_chat_id string
-// 	Chan_type string
-// 	Msg_type string
-// 	Open_id string
-// 	Open_message_id string
-// 	Is_mention string
-// 	Text string
-// 	Text_without_at_bot string
-// 	Chat_type string
-// 	Mg_type string
-// }
-
 func a(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "GET" {
 		//fmt.Printf("%T",a1)
